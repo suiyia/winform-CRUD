@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8895F26F-1FF0-4901-8197-E80285FAAA80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StatisticalTools</RootNamespace>
+    <AssemblyName>StatisticalTools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\answer\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>order_128px_1185226_easyicon.net.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D85F102A90E3BDECDAA830FB4AAE744928269790</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>StatisticalTools_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Users\answer\Desktop\陈曙辉\PapersStatisticTools1.1\PapersStatisticTools\PapersStatisticTools\PapersStatisticTools\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NPinyin, Version=0.2.6321.26573, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPinyin.0.2.6321.26573\lib\net20\NPinyin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Doc, Version=5.7.0.54020, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Doc.5.7\lib\net20\Spire.Doc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.5.20, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Doc.5.7\lib\net20\Spire.License.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=3.7.291.54020, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Doc.5.7\lib\net20\Spire.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="forms\ChooseGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ChooseGuest.Designer.cs">
+      <DependentUpon>ChooseGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\DeleteBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\DeleteBill.Designer.cs">
+      <DependentUpon>DeleteBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\DeleteGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\DeleteGuest.Designer.cs">
+      <DependentUpon>DeleteGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\SelectGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SelectGuest.Designer.cs">
+      <DependentUpon>SelectGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UpdateBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\UpdateBill.Designer.cs">
+      <DependentUpon>UpdateBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utils\AutoSizeFormClass.cs" />
+    <Compile Include="utils\ExportToExcelMain.cs" />
+    <Compile Include="utils\ExportToExcel.cs" />
+    <Compile Include="utils\ExportToWord.cs" />
+    <Compile Include="utils\Test.cs" />
+    <Compile Include="vo\conditionVO.cs" />
+    <Compile Include="forms\NewBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\NewBill.Designer.cs">
+      <DependentUpon>NewBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="po\BillPO.cs" />
+    <Compile Include="forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="po\Color.cs" />
+    <Compile Include="po\Guest.cs" />
+    <Compile Include="forms\Newcolor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Newcolor.Designer.cs">
+      <DependentUpon>Newcolor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Newxinghao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Newxinghao.Designer.cs">
+      <DependentUpon>Newxinghao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Newzhonglei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Newzhonglei.Designer.cs">
+      <DependentUpon>Newzhonglei.cs</DependentUpon>
+    </Compile>
+    <Compile Include="po\Xinghao.cs" />
+    <Compile Include="po\Zhonglei.cs" />
+    <Compile Include="utils\ConfigHelper.cs" />
+    <Compile Include="utils\LogerHelper.cs" />
+    <Compile Include="utils\MySqlHelper .cs" />
+    <Compile Include="utils\MysqlManager.cs" />
+    <Compile Include="forms\NewGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\NewGuest.Designer.cs">
+      <DependentUpon>NewGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\ReadAndWriteIniFile.cs" />
+    <EmbeddedResource Include="forms\ChooseGuest.resx">
+      <DependentUpon>ChooseGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\DeleteGuest.resx">
+      <DependentUpon>DeleteGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\DeleteBill.resx">
+      <DependentUpon>DeleteBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SelectGuest.resx">
+      <DependentUpon>SelectGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UpdateBill.resx">
+      <DependentUpon>UpdateBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\NewBill.resx">
+      <DependentUpon>NewBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Newcolor.resx">
+      <DependentUpon>Newcolor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\NewGuest.resx">
+      <DependentUpon>NewGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Newxinghao.resx">
+      <DependentUpon>Newxinghao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Newzhonglei.resx">
+      <DependentUpon>Newzhonglei.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StatisticalTools_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="order_128px_1185226_easyicon.net.ico" />
+    <None Include="Resources\箭头.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
